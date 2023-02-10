@@ -1,0 +1,66 @@
+#header{
+    background-color:rgb(9, 82, 25) ;
+    color: aliceblue;
+    border-bottom:solid 3px black;
+}
+
+#weatherCard{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(9, 82, 25);
+    color: aliceblue;
+    margin: 5px;
+    padding: 5px;
+    height: 11em;
+    border-radius: 10px;
+    border: solid 3px black;
+}
+
+#big-container{
+    display: flex;
+    flex-direction: row;
+}
+
+#user-form{
+    width: 20vw;
+    margin: 1em;
+    
+}
+
+#forecast{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: auto;
+}
+
+#forecast-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#hero{
+    border: solid 3px black;
+    width: 70vw;
+    height: 10em;
+    margin: 1em;
+    color: rgb(9, 82, 25);
+}
+
+ul{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+li {
+    list-style: none;
+    margin: 1px;
+    background-color: rgb(9, 82, 25);
+    border-radius: 5px;
+    width: 20vw;
+}
+
+li:hover {
+    cursor: pointer;
+}
