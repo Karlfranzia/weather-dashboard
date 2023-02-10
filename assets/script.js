@@ -86,7 +86,7 @@ var renderWeather  = function(data){
 //retrieves search history from local storage and renders it on screen
 var displaySearchHistory = function() {
     var historyList = document.querySelector('#history-list');
-    
+    historyList.innerHTML = ""
     savedHistory = JSON.parse(localStorage.getItem('searchHistory'))
     //makes sure history is max 5
     if (savedHistory.length > 5) {
