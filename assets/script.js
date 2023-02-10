@@ -19,7 +19,7 @@ var formSubmitHandler = function (event) {
     displaySearchHistory()
 
     //fetches the api
-    var apiUrl = "http://api.openweathermap.org/data/2.5/forecast?q="+city+","+state+","+zip+"&appid=8ab1ad8907d5b53ce4b2492d5b880ab1"
+    var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q="+city+","+state+","+zip+"&appid=8ab1ad8907d5b53ce4b2492d5b880ab1"
     fetch(apiUrl)
     .then(function (response) {
       if (response.ok) {
@@ -103,7 +103,7 @@ var displaySearchHistory = function() {
             var city = cityEl.value.trim()
             var state = stateEl.value.trim()
             var zip = zipEl.value.trim()
-            var apiUrl = "http://api.openweathermap.org/data/2.5/forecast?q="+city+","+state+","+zip+"&appid=8ab1ad8907d5b53ce4b2492d5b880ab1"
+            var apiUrl = "https://api.openweathermap.org/data/2.5/forecast?q="+city+","+state+","+zip+"&appid=8ab1ad8907d5b53ce4b2492d5b880ab1"
             fetch(apiUrl)
                 .then(function (response) {
                 if (response.ok) {
